@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+dist/
+coverage/
+.env*
+!.env.example
+.vercel/
+.local-data/
+.data/
+/data/
+/uploads/
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

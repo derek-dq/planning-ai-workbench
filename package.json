@@ -1,0 +1,31 @@
+{
+  "name": "planning-ai-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:planner:smoke": "node scripts/run-live-smoke.mjs src/server/planner/deepseek-smoke.live.test.ts PLANNER_LIVE_SMOKE",
+    "test:writer:smoke": "node scripts/run-live-smoke.mjs src/server/writer/deepseek-smoke.live.test.ts WRITER_LIVE_SMOKE",
+    "test:reviewer:smoke": "node scripts/run-live-smoke.mjs src/server/reviewer/deepseek-smoke.live.test.ts REVIEWER_LIVE_SMOKE",
+    "test:case-001:planner": "node scripts/run-live-smoke.mjs src/server/evaluation/case-001-planner.live.test.ts CASE_001_PLANNER_LIVE_EVAL"
+  },
+  "dependencies": {
+    "next": "16.2.12",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.12",
+    "typescript": "^5",
+    "vitest": "^4.0.0"
+  }
+}
